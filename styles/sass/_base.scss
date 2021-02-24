@@ -33,6 +33,7 @@ $ff-semibold-montserrat: 'Montserrat SemiBold', sans-serif;
 $color-1: #FFFFFF;
 $color-2: #2C3136;
 $color-3: #171A1C;
+$color-4: #B2936D;
 
 /*-------------------------- PRESETS ---------------------------*/
 
@@ -71,10 +72,13 @@ html {
 body {
     font-family: $ff-regular-jost;
     font-size: 1.6rem;
-    line-height: 1.52;
     background-color: $color-1;
+    color: $color-2;
 }
 
 a {text-decoration: none;}
 
 ul {list-style: none;}
+
+/*-------------------------- TYPOGRAPHY ---------------------------*/
+

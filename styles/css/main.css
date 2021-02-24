@@ -63,8 +63,8 @@ html {
 body {
   font-family: "Jost Regular", sans-serif;
   font-size: 1.6rem;
-  line-height: 1.52;
   background-color: #FFFFFF;
+  color: #2C3136;
 }
 
 a {
@@ -75,6 +75,7 @@ ul {
   list-style: none;
 }
 
+/*-------------------------- TYPOGRAPHY ---------------------------*/
 .container {
   width: 100%;
   max-width: 120rem;
@@ -101,6 +102,7 @@ ul {
   font-size: 1.8rem;
   font-family: "Jost Medium", sans-serif;
   padding: 0 2rem;
+  color: #B2936D;
 }
 
 .nav__list {
@@ -111,9 +113,80 @@ ul {
   padding: 0 3rem;
 }
 
+.nav__link {
+  color: #2C3136;
+  transition: color .2s ease-in-out;
+}
+
+.nav__link:hover {
+  color: #B2936D;
+}
+
 .nav__cta {
   flex-basis: 25%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.hero {
+  display: flex;
+  height: 50rem;
+}
+
+.hero__image-box {
+  background-image: url("../../images/wine.jpeg");
+  height: 50rem;
+  flex-basis: 40%;
+  background-size: cover;
+}
+
+.hero__text-box {
+  padding: 8rem;
+  height: 50rem;
+  background-color: #B2936D;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 88%);
+}
+
+.hero__text-box .h-1 {
+  max-width: 70rem;
+  margin: 1.5rem 0 6rem;
+  line-height: 1.2;
+}
+
+.hero__text-box .h-2 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-family: "Montserrat SemiBold", sans-serif;
+  font-weight: 600;
+  letter-spacing: .7px;
+  word-spacing: 3px;
+}
+
+.hero__line {
+  height: 1px;
+  width: 100%;
+  background-color: #2C3136;
+  margin-bottom: 3rem;
+}
+
+.hero__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__text p {
+  width: 70%;
+  max-width: 100%;
+}
+
+.hero__text a {
+  border-bottom: 1.8px solid #2C3136;
+  color: #2C3136;
+  transition: border-color .2s ease-in-out;
+}
+
+.hero__text a:hover {
+  border-color: #B2936D;
 }

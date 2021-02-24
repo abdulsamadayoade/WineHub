@@ -16,6 +16,7 @@
         font-size: 1.8rem;
         font-family: $ff-medium-jost;
         padding: 0 2rem;
+        color: $color-4;
     }
 
     &__list {
@@ -26,10 +27,81 @@
         padding: 0 3rem;
     }
 
+    &__link {
+        color: $color-2;
+        transition: color .2s ease-in-out;
+
+        &:hover {
+            color: $color-4;
+        }
+    }
+
     &__cta {
         flex-basis: 25%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
+    }
+}
+
+.hero {
+    display: flex;
+    height: 50rem;
+
+    &__image-box {
+        background-image: url("../../images/wine.jpeg");
+        height: 50rem;
+        flex-basis: 40%;
+        background-size: cover;
+    }
+
+    &__text-box {
+        padding: 8rem;
+        height: 50rem;
+        background-color: $color-4;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 88%);
+
+        .h-1 {
+            max-width: 70rem;
+            margin: 1.5rem 0 6rem;
+            line-height: 1.2;
+        }
+
+        .h-2 {
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            font-family: $ff-semibold-montserrat;
+            font-weight: 600;
+            letter-spacing: .7px;
+            word-spacing: 3px;
+        }
+    }
+
+    &__line {
+        height: 1px;
+        width: 100%;
+        background-color: $color-2;
+        margin-bottom: 3rem;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            width: 70%;
+            max-width: 100%;
+        }
+
+        a {
+            border-bottom: 1.8px solid $color-2;
+            color: $color-2;
+            transition: border-color .2s ease-in-out;
+
+            &:hover {
+                border-color: $color-4
+            }
+        }
     }
 }
