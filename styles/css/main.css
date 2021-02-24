@@ -1,0 +1,119 @@
+/*-------------------------- FONTS ---------------------------*/
+@font-face {
+  font-family: 'Jost Regular';
+  src: url("../../textfonts/Jost-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Jost Medium';
+  src: url("../../textfonts/Jost-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url("../../textfonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat SemiBold';
+  src: url("../../textfonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+/*-------------------------- VARIABLES ---------------------------*/
+/*-------------------------- PRESETS ---------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 51%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: "Jost Regular", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.52;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+}
+
+.nav > * {
+  height: 100%;
+}
+
+.nav .logo {
+  flex-basis: 27%;
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  font-size: 1.8rem;
+  font-family: "Jost Medium", sans-serif;
+  padding: 0 2rem;
+}
+
+.nav__list {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.nav__cta {
+  flex-basis: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
