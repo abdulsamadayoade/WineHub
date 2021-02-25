@@ -75,6 +75,27 @@
             letter-spacing: .7px;
             word-spacing: 3px;
         }
+
+        &--inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            p {
+                width: 70%;
+                max-width: 100%;
+            }
+    
+            a {
+                border-bottom: 1.8px solid $color-2;
+                color: $color-2;
+                transition: border-color .2s ease-in-out;
+    
+                &:hover {
+                    border-color: $color-4
+                }
+            }
+        }
     }
 
     &__line {
@@ -82,26 +103,5 @@
         width: 100%;
         background-color: $color-2;
         margin-bottom: 3rem;
-    }
-
-    &__text {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        p {
-            width: 70%;
-            max-width: 100%;
-        }
-
-        a {
-            border-bottom: 1.8px solid $color-2;
-            color: $color-2;
-            transition: border-color .2s ease-in-out;
-
-            &:hover {
-                border-color: $color-4
-            }
-        }
     }
 }

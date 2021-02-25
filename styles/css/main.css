@@ -163,30 +163,30 @@ ul {
   word-spacing: 3px;
 }
 
-.hero__line {
-  height: 1px;
-  width: 100%;
-  background-color: #2C3136;
-  margin-bottom: 3rem;
-}
-
-.hero__text {
+.hero__text-box--inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.hero__text p {
+.hero__text-box--inner p {
   width: 70%;
   max-width: 100%;
 }
 
-.hero__text a {
+.hero__text-box--inner a {
   border-bottom: 1.8px solid #2C3136;
   color: #2C3136;
   transition: border-color .2s ease-in-out;
 }
 
-.hero__text a:hover {
+.hero__text-box--inner a:hover {
   border-color: #B2936D;
+}
+
+.hero__line {
+  height: 1px;
+  width: 100%;
+  background-color: #2C3136;
+  margin-bottom: 3rem;
 }
